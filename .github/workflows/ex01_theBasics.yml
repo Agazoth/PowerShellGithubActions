@@ -1,6 +1,6 @@
 #This is the bare minimum a GitHub Actions workflow can be. It runs a script that outputs a message to the console.
 on: workflow_dispatch
-name: Example 02 - The Basics
+name: Example 01 - The Basics
 
 #This isn't technically required, and can also be set at the job level, but it defaults to bash so why not PowerShell?
 defaults:
