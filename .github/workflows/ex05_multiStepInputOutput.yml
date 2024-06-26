@@ -19,6 +19,7 @@ jobs:
         id: color-selector
         run: |
             "SELECTED_COLOR=${{ github.event.inputs.color }}" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
+            Get-Content $env:GITHUB_OUTPUT 
       - name: Get color
         env:
           SELECTED_COLOR: ${{ steps.color-selector.outputs.SELECTED_COLOR }}
